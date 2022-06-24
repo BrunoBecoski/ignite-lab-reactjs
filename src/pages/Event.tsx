@@ -1,7 +1,13 @@
 import { Header } from '../components/Header';
+import { Sidebar } from '../components/SideBar';
 
 export function Event() {
   return (
-    <Header />
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex flex-1">
+        <Sidebar />
+      </main>
+    </div>
   );
 }
