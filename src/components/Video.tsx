@@ -48,7 +48,7 @@ export function Video({ lessonSlug }: VideoProps ) {
   if (!data) {
     return (
       <div className="flex-1 flex items-center justify-center">
-        <div className="w-10 h-10 rounded-full border-4 border-green-400 border-r-gray-500 animate-spin" />
+        <div className="w-10 h-10 rounded-full border-4 border-green-300 border-r-gray-500 animate-spin" />
       </div>
     );
   }

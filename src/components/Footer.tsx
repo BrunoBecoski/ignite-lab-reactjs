@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="flex justify-between items-center mx-6 py-6 border-t border-gray-500">
+    <footer className="flex justify-between items-center mx-6 py-6 bg-gray-900 border-t border-gray-500">
       <div className="flex items-center">  
         <svg
           xmlns="http://www.w3.org/2000/svg"
