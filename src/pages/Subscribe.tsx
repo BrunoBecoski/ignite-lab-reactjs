@@ -28,34 +28,34 @@ export function Subscribe() {
   }
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden bg-darkGray-900">
       <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center overflow-hidden">
         <img className="max-w-[calc(100vw_+_180px)] top-[-30px] md:top-[10px] absolute" src="/src/assets/react-icon.png" alt="" />
         <div className="w-full max-w-[1440px] flex flex-col md:flex-row items-center justify-around mt-10 md:mt-20 mx-auto z-10">
           <div className="md:max-w-[640px] px-6 flex md:block flex-col justify-center items-center md:px-0 text-center md:text-left">
             <Logo />
 
-            <h1 className="mt-6 md:mt-8 text-3xl md:text-[2.5rem] leading-tight">
+            <h1 className="mt-6 md:mt-8 text-3xl md:text-[2.5rem] leading-tight text-darkGray-100">
               Construa uma <strong className="text-blue-500">aplicação completa</strong>, do zero, com <strong className="text-blue-500">React</strong>
             </h1>
 
-            <p className="mt-6 text-sm md:text-base text-gray-200 leading-relaxed">
+            <p className="mt-6 text-sm md:text-base text-darkGray-200 leading-relaxed">
               Em apenas uma semana você vai dominar na prática uma das tecnologias mais utilizadas e com alta demanda para acessar as melhores oportunidades do mercado.
             </p>
           </div>
 
-          <div className="w-full md:w-auto mt-8 md:mt-0 py-8 px-6 md:p-8 bg-gray-700 border-t border-b md:border border-gray-500 md:rounded">
-            <strong className="text-[1.125rem] md:text-2xl mb-6 block">Inscreva-se gratuitamente</strong>
+          <div className="w-full md:w-auto mt-8 md:mt-0 py-8 px-6 md:p-8 bg-darkGray-700 border-t border-b md:border border-darkGray-500 md:rounded">
+            <strong className="text-[1.125rem] md:text-2xl mb-6 block text-darkGray-100">Inscreva-se gratuitamente</strong>
 
             <form onSubmit={handleSubscribe} className="flex flex-col gap-2 w-full">
               <input
-                className="bg-gray-900 rounded px-5 h-14"
+                className="bg-darkGray-900 rounded px-5 h-14 text-darkGray-100"
                 type="text"
                 placeholder="Seu nome completo"
                 onChange={event => setName(event.target.value)}
               />
               <input
-                className="bg-gray-900 rounded px-5 h-14"
+                className="bg-darkGray-900 rounded px-5 h-14  text-darkGray-100"
                 type="text"
                 placeholder="Digite seu e-mail"
                 onChange={event => setEmail(event.target.value)}
@@ -64,7 +64,7 @@ export function Subscribe() {
               <button
                 type="submit"
                 disabled={loading}
-                className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors disabled:opacity-50"
+                className="mt-4 bg-green-500 text-darkGray-100 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors disabled:opacity-50"
               >
                 Garantir minha vaga
               </button>
