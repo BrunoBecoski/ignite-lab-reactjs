@@ -21,6 +21,12 @@ module.exports = {
         blue: {
           500: '#81D8F7',
         },
+        lightBlue: {
+          500: '#75BEFF',
+        },
+        darkBlue: {
+          500: '#0366D6',
+        },
         orange: {
           500: '#FBA94C',
         },

@@ -28,12 +28,12 @@ export function Lesson({
 
   return (
     <Link to={`/event/lesson/${slug}`} className="group">
-      <span className="text-gray-300">
+      <span className="dark:text-darkGray-300 text-lightGray-300">
         <p className="first-letter:uppercase">{availableDateFormatted}</p>
       </span>  
 
       <div 
-        className={classNames('rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500', {
+        className={classNames('rounded border dark:border-darkGray-500 border-lightGray-500 p-4 mt-2 group-hover:border-green-500', {
           'bg-green-500' : isActiveLesson,
         })}
       >
@@ -41,7 +41,7 @@ export function Lesson({
           { isLessonAvailable ? ( 
             <span className={classNames('text-sm font-medium flex items-center gap-2', {
               'text-white': isActiveLesson,
-              'text-blue-500': !isActiveLesson
+              'dark:text-lightBlue-500 text-darkBlue-500': !isActiveLesson
             })}>
               <CheckCircle size={20} />
               Conteúdo liberado
@@ -53,9 +53,9 @@ export function Lesson({
             </span>
           )}
 
-          <span className={classNames('text-xs rounded py-[0.125rem] px-2 text-white border font-bold', {
-            'border-white': isActiveLesson,
-            'border-green-300': !isActiveLesson
+          <span className={classNames('text-xs rounded py-[0.125rem] px-2 border font-bold', {
+            'border-white text-white': isActiveLesson,
+            'border-green-300 dark:text-darkGray-100 text-lightGray-100': !isActiveLesson
           })}>
             { type ==='live' ? 'AO VIVO' : 'AULA PRÁTICA' }
           </span>
@@ -63,7 +63,7 @@ export function Lesson({
 
         <strong className={classNames('mt-5 block', {
           'text-white': isActiveLesson,
-          'text-gray-200': !isActiveLesson
+          'dark:text-darkGray-200 text-lightGray-200': !isActiveLesson
         })}>
           {title}
         </strong>

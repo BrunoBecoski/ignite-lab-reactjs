@@ -1,5 +1,6 @@
 import { useGetLessonsQuery } from '../graphql/generated';
 
+import { ChangeTheme } from './ChangeTheme';
 import { Lesson } from './Lesson';
 
 export function Sidebar({ className }: any) {
@@ -7,11 +8,13 @@ export function Sidebar({ className }: any) {
 
   return (
     <aside 
-      className={`w-full md:w-[348px] bg-gray-700 p-6 border-l border-gray-600 ${className}`}
+      className={`w-full md:w-[348px] dark:bg-darkGray-700 bg-lightGray-700 p-6 border-l dark:border-darkGray-600 border-lightGray-600 overflow-hidden ${className}`}
     >
-      <span className="font-bold text-2xl pb-6 mb-6 border-b border-gray-500 block">
+      <span className="font-bold text-2xl pb-6 mb-6 border-b dark:border-darkGray-500 border-lightGray-500 flex justify-between">
         Cronograma de aulas
+      <ChangeTheme />
       </span>
+
 
       <div className="flex flex-col gap-8">
         {

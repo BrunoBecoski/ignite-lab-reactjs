@@ -44,33 +44,33 @@ export function Video({ lessonSlug, className }: VideoProps ) {
             <h1 className="text-lg md:text-2xl font-bold">
               {data.lesson.title}
             </h1>
-            <p className="mt-4 text-sm md:text-base text-gray-200 leading-relaxed">
+            <p className="mt-4 text-sm md:text-base dark:text-darkGray-200 text-lightGray-200 leading-relaxed">
               {data.lesson.description}
             </p>
 
             {data.lesson.teacher && (
               <div className="flex items-center gap-4 mt-6">
                 <img 
-                  className="h-16 w-16 rounded-full border-2 border-blue-500"
+                  className="h-16 w-16 rounded-full border-2 dark:border-lightBlue-500 border-darkBlue-500"
                   src={data.lesson.teacher.avatarURL}
                   alt={'Avatar ' + data.lesson.teacher.name}
                 />
   
                 <div className="leading-relaxed">
                   <strong className="font-bold text-lg md:text-2xl block">{data.lesson.teacher.name}</strong>
-                  <span className="text-gray-200 text-sm block">{data.lesson.teacher.bio}</span>
+                  <span className="dark:text-darkGray-200 text-lightGray-200 text-sm block">{data.lesson.teacher.bio}</span>
                 </div>
               </div>
             )}
           </div>
 
           <div className="flex flex-col w-full md:w-auto gap-4">
-            <a href="#" className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors">
+            <a href="#" className="p-4 text-sm text-white bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors">
               <DiscordLogo size={24} />
               Comunidade do Discord
             </a>
 
-            <a href="#" className="p-4 text-sm text-blue-500 border border-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-gray-900 transition-colors">
+            <a href="#" className="p-4 text-sm dark:text-lightBlue-500 text-darkBlue-500 border dark:border-lightBlue-500 border-darkBlue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:dark:bg-lightBlue-500 hover:bg-darkBlue-500 hover:text-white transition-colors">
               <Lightning size={24} />
               Acesse o desafio              
             </a>
@@ -78,13 +78,13 @@ export function Video({ lessonSlug, className }: VideoProps ) {
         </div>
         
         <div className="gap-4 md:gap-8 mt-16 md:mt-20 grid md:grid-cols-2 w-full">
-          <a href="#" className="bg-gray-700 rounded overflow-hidden flex items-stretch justify-between gap-6 hover:bg-gray-600 transition-colors">
-            <div className="bg-green-700 h-full p-2 md:p-6 flex items-center">
+          <a href="#" className="dark:bg-darkGray-700 bg-lightGray-700 rounded overflow-hidden flex items-stretch justify-between gap-6 hover:dark:bg-darkGray-600 hover:bg-lightGray-600 transition-colors">
+            <div className="bg-green-700 text-white h-full p-2 md:p-6 flex items-center">
               <FileArrowDown size={40} />
             </div>
             <div className="py-4 md:py-6 leading-relaxed">
               <strong className="text-lg md:text-2xl">Material complementar</strong>
-              <p className="text-xs md:text-sm text-gray-200 mt-[2px] md:mt-2">
+              <p className="text-xs md:text-sm dark:text-darkGray-200 text-lightGray-200 mt-[2px] md:mt-2">
                 Acesse o material complementar para acelerar o seu desenvolvimento
               </p>
             </div>
@@ -93,13 +93,13 @@ export function Video({ lessonSlug, className }: VideoProps ) {
             </div>
           </a>
           
-          <a href="#" className="bg-gray-700 rounded overflow-hidden flex items-stretch justify-between gap-6 hover:bg-gray-600 transition-colors">
-            <div className="bg-green-700 h-full p-2 md:p-6 flex items-center">
+          <a href="#" className="dark:bg-darkGray-700 bg-lightGray-700 rounded overflow-hidden flex items-stretch justify-between gap-6 hover:dark:bg-darkGray-600 hover:bg-lightGray-600 transition-colors">
+            <div className="bg-green-700 text-white h-full p-2 md:p-6 flex items-center">
               <Image size={40} />
             </div>
             <div className="py-4 md:py-6 leading-relaxed">
               <strong className="text-lg md:text-2xl">Wallpaper exclusivos</strong>
-              <p className="text-xs md:text-sm text-gray-200 mt-[2px] md:mt-2">
+              <p className="text-xs md:text-sm dark:text-darkGray-200 text-lightGray-200 mt-[2px] md:mt-2">
                 Baixe wallpapers exclusivos do Ignite Lab e personalize a sua máquina
               </p>
             </div>
