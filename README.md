@@ -31,3 +31,34 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 O Ignite Lab é uma plataforma de vídeos para eventos online.
+
+
+## 🔖 Layout
+
+</br>
+
+### Página de inscrição 
+
+<div align="center">
+  <img src=".github/page_subscribe.png" />
+</div>
+
+</br>
+</br>
+
+### Página do evento
+
+</br>
+
+#### Tema escuro
+<div align="center">
+  <img src=".github/page_event_dark.png" />
+</div>
+
+</br>
+
+#### Tema claro
+<div align="center">
+   <img src=".github/page_event_light.png" />
+</div>
+
