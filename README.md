@@ -21,8 +21,13 @@
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Vite](https://vitejs.dev)
-- [React](https://reactjs.org)
+- [ReactJS](https://reactjs.org)
 - [TypeScript](https://www.typescriptlang.org/)
+- [TailWindCSS](https://tailwindcss.com)
 - [GraphCMS](https://graphcms.com)
 - [GraphQL](https://graphql.org)
 - [Apollo](https://www.apollographql.com)
+
+## 💻 Projeto
+
+O Ignite Lab é uma plataforma de vídeos para eventos online.
